@@ -9,7 +9,7 @@ port_server = 12341
 server.bind((host_server, port_server))
 
 client = socket.socket()
-host_client =  redis_db.get('TCP_HOST')
+host_client =  eval(redis_db.get('TCP_HOST'))
 port_client = eval(redis_db.get('TCP_PORT'))
 client.connect((host_client, port_client))
 
