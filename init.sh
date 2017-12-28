@@ -4,7 +4,7 @@
 # Carry out specific functions when asked to by the system
 case "$1" in
   start)
-    nohup python /opt/dtedge/system-time/client-server.py > /var/log/client-server.log 2>&1 &
+    nohup python /opt/dtedge/tcp-client-server/tcp-client-server.py > /var/log/tcp-client-server.log 2>&1 &
     ;;
   stop)
     killall python
