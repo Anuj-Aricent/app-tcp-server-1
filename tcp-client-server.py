@@ -1,6 +1,7 @@
 import socket               # Import socket module
 import thread
 import redis
+import os
 from urlparse import urlparse
 
 server = socket.socket()
