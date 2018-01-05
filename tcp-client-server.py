@@ -10,7 +10,7 @@ host_server = "0.0.0.0"
 port_server = 12341
 server.bind((host_server, port_server))
 url_addrs_json = eval(redis_db.get('TCP-SERVER-MS'))
-url_addrs = str(url_addrs_json["12345"])
+url_addrs = str(url_addrs_json["12346"])
 client = socket.socket()
 addr = urlparse(url_addrs)
 host_client = addr.hostname # Get local machine name
